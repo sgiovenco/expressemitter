@@ -4,8 +4,8 @@ Use with Express library to enable endpoints for html5 EventSource elements.
 
 Example Usage:
 
-    var app = require("express")
-      , sseEndpoint = require("expressemitter");
+    var app = require("express")()
+      , sseEndpoint = require("expressemitter")();
     
     //browser-side: var sseSource = new EventSource("/sse");
     app.use("/sse", sseEndpoint, function(req, res) {
