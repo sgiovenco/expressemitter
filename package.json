@@ -16,10 +16,11 @@
     "test": "vows test/*.js"
   },
   "author": "Steven Giovenco",
+  "homepage": "https://github.com/sgiovenco/expressemitter",
   "repository": {
     "type" : "git",
     "url" : "http://github.com/sgiovenco/expressemitter.git"
   },
   "bugs": "http://github.com/sgiovenco/expressemitter/issues",
-  "license" : "BSD"
+  "license" : "MIT"
 }
