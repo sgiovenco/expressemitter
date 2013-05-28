@@ -1,0 +1,19 @@
+{
+  "name": "expressemitter",
+  "private": true,
+  "version": "v0.0.0a",
+  "description": "Express + Emitter = Express + SSE + Emitter = ExpreSSEmitter",
+  "keywords": [
+    "SSE", "server-sent events",
+    "express", "emitter",
+    "EventSource", "eventsource"
+  ],
+  "devDependencies": {
+    "express": "*",
+    "vows": "*"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "vows test/*.js"
+  }
+}
