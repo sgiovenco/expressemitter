@@ -1,1 +1,1 @@
-Express + SSE = ExpreSSE
+Express + Emitter = Express + SSE + Emitter = ExpreSSEmitter
