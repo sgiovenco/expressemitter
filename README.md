@@ -7,23 +7,23 @@ Example Usage:
     var app = require("express")()
       , sseSender = require("expressemitter")();
     
-    //browser-side: var sseSource = new EventSource("/sse");
     app.use("/sse", sseSender, function(req, res) {
+    //browser-side: var sseSource = new EventSource("/sse");
     
       /*...*/
     
-      res.sendEvent("message", "some data");
       //browser-side: sseSource.addEventListener("message", function(msg){alert(msg);}, false);
+      res.sendEvent("message", "some data");
     
       /*...*/
     
+      //browser-side: sseSource.addEventListener("showDialogAt", function(pos) {dialog.showAt(JSON.parse(pos));}, false);
       res.sendEvent("showDialogAt", {x: 3, y: 4});
-      /*browser-side: sseSource.addEventListener("showDialogAt", function(pos) {dialog.showAt(JSON.parse(pos));}, false);
     
       /*...*/
     
+      //browser-side: sseSource.addEventListener("end", function() {sseSource.close();}, false);
       res.sendEvent("end"); //notify client of end of stream, some browsers will reconnect if not explicitly closed
-      /*browser-side: sseSource.addEventListener("end", function() {sseSource.close();}, false);
     
       res.end(); //close the response stream
     });
