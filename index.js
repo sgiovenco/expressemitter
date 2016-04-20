@@ -42,8 +42,8 @@
           sseMessage.push("data");
         }
         sseMessage = sseMessage.concat(["", ""]).join("\n");
-        console.log("Sending message: "+JSON.stringify(sseMessage));
         this.write(sseMessage);
+        this.flush(); // using compression so need to flush to actually send the data
       };
 
       var ogEnd = response.end;
