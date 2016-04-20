@@ -1,6 +1,6 @@
 {
   "name": "expressemitter",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "description": "Express + Emitter = Express + SSE + Emitter = ExpreSSEmitter",
   "keywords": [
     "SSE", "server-sent events",
